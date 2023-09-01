@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexBox</title>
+    <style>  .container{
+        height:540px;
+        width:100%;
+        border:2px solid black;
+        display: flex;
+        flex-direction: row;
+       /* flex-wrap: wrap;
+        flex-flow: row-reverse wrap;
+        justify-content: centre;
+        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        align-items: flex-end;*/
+
+    }
+    .item{
+        height: 100px;
+        width: 100px;
+        background-color: cyan;
+        border: 2px solid blue;
+        padding:3px;
+        margin:10px;
+    }#item1-{
+     /* the higher the order,yhe latter it shows in the conatiner
+     order: 2;
+     flex-grow: 2;*/
+    }
+    #item2-{
+  /* flex-grow: 3;
+   flex-basis: 250px;*/
+   /*controls the width when flex direction is row*/
+   /*controls the height when flex direction is column*/
+     }
+      #item3-{
+     /*flex-shrink: 2;
+     order:40
+     align-self:flex-end;*/
+     
+      } 
+
+    </style>
+      
+    
+</head>
+<body>
+    <h1> this is a FLEX BOX</h1>
+    <div class="container">
+        <div class="item" id="item1-">first box</div>
+        <div class="item" id="item2-">second box</div>
+        <div class="item" id="item3-">third box</div>
+        <div class="item" id="item4-">fourth box</div>
+        <div class="item" id="item5-">fifth box</div>
+        <div class="item" id="item6-">sixth box</div>
+
+    </div>
+</body>
+</html>
