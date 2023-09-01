@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>/
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* z-indexx works for only position-relative,absolute,fixed and does not work for static*/
+        .box{
+            height: 100px;
+            width: 100px;
+            border:2px solid black;
+            
+            
+        }
+        #box1{
+            position: relative;
+            background-color: aqua;
+            top: 45px;
+            z-index:32 ;
+        }
+        #box2{
+           /* display: none;* will hide the element and space*/
+            background-color: blue;
+            position: relative;
+            top: 15px;
+            z-index: 12;
+            /*visibility: hidden;* only hide the element space is taken*/
+        }
+        #box3{
+            background-color: chocolate;
+        }
+        #box4{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+
+
+
+
+</body>
+</html>
