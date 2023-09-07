@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selector</title>
+    <style>
+       header{
+        display:flex;
+       }
+       .navigation{
+        display: flex;
+       
+       }
+       li{
+        padding: 15px 15px;
+        list-style: none;
+       }
+       section{
+        display: flex;
+        flex-direction: column;
+        margin: 3px 30px;
+        align-items: center;
+        
+        height: 250 px;
+        justify-content: center;
+
+       }
+     /*  section::before{
+        content: "yhis is a contnent";
+       }*/
+       header::before{
+        background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 0.9;
+        z-index: -1;
+        left: 0;
+        top: 0;
+       }
+       body{
+        
+        color: white;
+        margin: 0px;
+       
+        padding: 0px;
+       }
+       h3{
+        font-size: 3rem;
+       }
+       p{
+        text-align: centre;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>home</li>
+                <li>about us</li>
+                <li>services</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h3>welcome to coding world</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex corrupti laborum quod quas perferendis quis possimus sunt, beatae, est voluptate amet, voluptatibus qui eveniet a? Quas quam fugit enim reiciendis, impedit, dolores fugiat vero quasi voluptatum velit magnam? Ipsum reiciendis laudantium tenetur, qui unde totam expedita vel tempore nobis reprehenderit!</p>
+        </section>
+      
+    
+    
+</body>
+</html>
